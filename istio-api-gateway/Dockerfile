@@ -14,7 +14,7 @@ ADD ./istio-api-gateway $HOME
 
 RUN mvn package -DskipTests
 
-FROM openjdk:11
+FROM openjdk:8u131-jdk-alpine
 
 EXPOSE 8080
 
