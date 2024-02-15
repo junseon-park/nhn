@@ -9,6 +9,7 @@ podTemplate(yaml: """
               kind: Pod
               metadata:
                 name: kaniko-image-build-pod
+		namespace: jenkins
               spec:
                 containers:
                 - name: kaniko
